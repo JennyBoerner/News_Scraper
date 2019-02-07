@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scraping With Mongoose</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <style>
+    .navbar{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .navbar-brand {
+      font-size: 32px;
+    }
+    .nav-item, .btn{
+      font-size: 20px;
+    }
+    .btn {
+      margin-left: 10px;
+    }
+    .title {
+      text-align: center;
+      background-color: bisque;
+      padding-top: 150px;
+      padding-bottom: 150px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 85px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Mongo Scraper</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">Saved Articles</a>
+        <button class="btn btn-sm btn-secondary" type="button">Scrape New Articles!</button>
+        <button class="btn btn-sm btn-secondary" type="button">Clear Articles!</button>
+      </div>
+    </div>
+  </nav>
+  <div class="w-100 title">
+    Mongo Scraper
+    <br/>
+    NPR Edition
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="wrapper">
+          <h1>Articles:</h1>
+          <div id="articles"></div>
+          <div id="notes"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
